@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Assessment.Assigned.v1",
+  "description": "The schema defines the structure for candidate assessment assigned business event",
+  "definitions": {
+    "payload": {
+      "type": "object",
+      "properties": {
+        "candidate_replication_id": {
+          "type": "string"
+        },
+        "assessment_replication_id": {
+          "type": "string"
+        },
+        "manager_replication_id": {
+          "type": "string"
+        },
+        "assigned_at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "replication_id",
+        "firstname",
+        "lastname",
+        "login",
+        "updated_at"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "event_version": {
+      "enum": [
+        1
+      ]
+    },
+    "event_name": {
+      "enum": [
+        "Assessment.Assigned"
+      ]
+    },
+    "produced_at": {
+      "type": "string"
+    },
+    "payload": {
+      "$ref": "#/definitions/payload"
+    }
+  },
+  "required": [
+    "event_id",
+    "event_version",
+    "event_name",
+    "produced_at",
+    "payload"
+  ]
+}
