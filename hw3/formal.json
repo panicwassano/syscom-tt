@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Candidate.v0",
+  "title": "Candidate.v1",
   "description": "The schema defines the structure for candidate created and updated formal events",
   "definitions": {
     "payload": {
@@ -38,7 +38,7 @@
     },
     "event_version": {
       "enum": [
-        0
+        1
       ]
     },
     "event_name": {
