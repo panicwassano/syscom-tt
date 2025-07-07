@@ -18,6 +18,9 @@
         "login": {
           "type": "string"
         },
+        "created_at": {
+          "type": "string"
+        },
         "updated_at": {
           "type": "string"
         }
@@ -27,6 +30,7 @@
         "firstname",
         "lastname",
         "login",
+        "created_at",
         "updated_at"
       ]
     }
