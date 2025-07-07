@@ -20,11 +20,10 @@
         }
       },
       "required": [
-        "replication_id",
-        "firstname",
-        "lastname",
-        "login",
-        "updated_at"
+        "candidate_replication_id",
+        "assessment_replication_id",
+        "manager_replication_id",
+        "assigned_at"
       ]
     }
   },
